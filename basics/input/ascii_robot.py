@@ -1,7 +1,9 @@
 # User Input Code
-eye = input("What character is to be used for an eye?")
+print("Please enter the chracter to be used as an eye")
+eye = input()
+# Robot
 print(" ########## ")
-print(" # {} {}  # ").format(eye)
+print(" # " + eye + "  " + eye + "   #")
 print(" #        # ")
 print(" ########## ")
 print("     ##     ")
