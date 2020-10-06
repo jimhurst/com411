@@ -1,3 +1,4 @@
+
 #Asking for user input for the direction of travel
 print("Tell me which direction to move (forward, backward, left or right")
 #storing to a variable
