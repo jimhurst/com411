@@ -2,7 +2,7 @@
 print("Program Started!")
 print("Please enter an ASCII code")
 #store to variable as integer
-code = int(input())
+code = abs(int(input()))
 #set variables to use with range
 lowv = 32
 highv = 127
