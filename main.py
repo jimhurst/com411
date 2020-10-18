@@ -16,37 +16,37 @@ import basics.input.review as review
 import basics.input.string_operators as string_operators
 import basics.input.user_input as user_input
 
-#import basics.functions.ascii_characters as ascii_characters
-#import basics.functions.ascii_code as code
-#import basics.functions.function_calls as function_calls
-#import basics.functions.function_with_loop as function_with_loop
-#import basics.functions.function_with_nesting as function_with_nesting
-#import basics.functions.function_with_parameter as function_with_parameter
-#import basics.functions.function_with_parameters as function_with_parameters
-#import basics.functions.multiple_functions as multiple_functions
-#import basics.functions.return_values as return_values
-#import basics.functions.simple_function as simple_function
+import basics.functions.ascii_character as ascii_character
+import basics.functions.ascii_code as code
+import basics.functions.function_calls as function_calls
+import basics.functions.function_with_loop as function_with_loop
+import basics.functions.function_with_nesting as function_with_nesting
+import basics.functions.function_with_parameter as function_with_parameter
+import basics.functions.function_with_parameters as function_with_parameters
+import basics.functions.multiple_functions as multiple_functions
+import basics.functions.return_values as return_values
+import basics.functions.simple_function as simple_function
 
-#import basics.for_loop.characters as characters
-#import basics.for_loop.countdown as countdown
-#import basics.for_loop.membership_operators as membership_operators
-#import basics.for_loop.range as loop_range
-#import basics.for_loop.reverse as reverse
-#import basics.for_loop.simple as simple
+import basics.for_loop.characters as characters
+import basics.for_loop.countdown as countdown
+import basics.for_loop.membership_operators as membership_operators
+import basics.for_loop.range as loop_range
+import basics.for_loop.reverse as reverse
+import basics.for_loop.simple as simple
 
-#import basics.decisions.and_operator as and_operator
-#import basics.decisions.or_operator as or_operator
-#import basics.decisions.review as review
+import basics.decisions.and_operator as and_operator
+import basics.decisions.or_operator as or_operator
+import basics.decisions.review as review
 
-#import basics.decisions.nested_decisions.nestception as nestception
-#import basics.decisions.nested_decisions.nested as nested
+import basics.decisions.nested_decision.nestception as nestception
+import basics.decisions.nested_decision.nested as nested
 
-#import basics.simple_decision.comparison_operator as comparison_operator
-#import basics.simple_decision.counter as counter
-#import basics.simple_decision.if_elif_else as if_elif_else
-#import basics.simple_decision.if_else as if_else
-#import basics.simple_decision.simple_decision_if as simple_decision_if
-#import basics.simple_decision.modulo_operator as modulo_operator
+import basics.decisions.simple_decision.comparison_operators as comparison_operators
+import basics.decisions.simple_decision.counter as counter
+import basics.decisions.simple_decision.if_elif_else as if_elif_else
+import basics.decisions.simple_decision.if_else as if_else
+import basics.decisions.simple_decision.simple_decision_if as simple_decision_if
+import basics.decisions.simple_decision.modulo_operator as modulo_operator
 
 def run_block_a():
     print("Which program in 'Block A: Basics' do you wish to run?")
@@ -79,8 +79,8 @@ def run_block_a():
         string_operators.run()
     elif (response == "user_input"):
         user_input.run()
-    elif (response == "ascii_characters"):
-        ascii_characters.run()
+    elif (response == "ascii_character"):
+        ascii_character.run()
     elif (response == "code"):
         code.run()
     elif (response == "function_calls"):
@@ -121,8 +121,8 @@ def run_block_a():
         nestception.run()
     elif (response == "nested"):
         nested.run()
-    elif (response == "comparison_operator"):
-        comparison_operator.run()
+    elif (response == "comparison_operators"):
+        comparison_operators.run()
     elif (response == "counter"):
         counter.run()
     elif (response == "if_elif_else"):
