@@ -1,5 +1,4 @@
 import basics.while_loop.simple as simple
-simple.run()
 
 #import basics.output.ascii_art as ascii_art
 #import basics.output.escape_characters as escape_characters
