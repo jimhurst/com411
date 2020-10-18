@@ -24,8 +24,12 @@ def repeat(word):
     else:
       print(word.upper())
   
-#display reverse
-#def reverseword(word):
+#display mirrored
+def dismirrored(word):
+    mirrored = ""
+    for letter in reversed(word):
+        mirrored += letter
+    print("{} | {}".format(word, mirrored))
 
 
 
@@ -53,7 +57,7 @@ while (choice != 6):
   elif (choice == 3):
     upper(word)
   elif (choice == 5):
-    mirrored(word)
+    dismirrored(word)
   elif (choice == 4):
     repeat(word)
   elif (choice == 6):
