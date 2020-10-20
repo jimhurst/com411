@@ -7,8 +7,13 @@ def movements():
 def run():
   print("Moving...")
   direction = movements()
-  print("{} for {} steps".format(direction[0],direction[1]))
-  print("{} for {} steps".format(direction[2],direction[3]))
-  print("{} for {} steps".format(direction[4],direction[5]))
-  print("{} for {} steps".format(direction[6],direction[7]))
+  for index in range(0, len(direction), 2):
+   print("{} for {} steps".format(direction[index],direction[index+1]))
+
 run()
+
+#repetative solution to the define run function
+  #print("{} for {} steps".format(direction[0],direction[1]))
+  #print("{} for {} steps".format(direction[2],direction[3]))
+  #print("{} for {} steps".format(direction[4],direction[5]))
+  #print("{} for {} steps".format(direction[6],direction[7]))
