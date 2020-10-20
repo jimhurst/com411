@@ -18,7 +18,7 @@ def run():
   print("Working out escape route...")
   for count in range(5):
     direction = menu()
-    route.append(menu())
+    route.append(direction)
   print("Escape route: {}".format(route))
 
 
