@@ -7,13 +7,16 @@ def observed():
   return observations  
 
 def run():
-  observed_output = observed()
   print("Counting observations")
-  observed_set = {(observed_output)}
-  
-  
+  observed_output = observed()
+  observed_set = set()
+  for observation in observed_output:
+    observed_set.add((observation, observed_output.count(observation)))
+  print(observed_set)
+
+  #for step in range(len.observed_output):
+  #  observed_set = {(observed_output, observed_output.count)}
   #print(observed_output.count("test"))
 
   
-
 run()
