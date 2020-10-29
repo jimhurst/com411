@@ -26,10 +26,12 @@ def run():
   observations = observed()
   remove_observations(observations)
 
-  observations_set = ()
+  print("Counting observations...")
+
+  observations_set = set()
   for observation in observations:
-    occurences = observations.count(observation)
-    observations_set.add((observation, occurences))
+   occurences = observations.count(observation)
+   observations_set.add( (observation, occurences) )
   
   for key, value in sorted(observations_set):
     print(f"{key} observed {value} times")
