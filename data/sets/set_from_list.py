@@ -23,6 +23,5 @@ def run():
   for observation in observed_set:
     print("{} observed {} times.".format(observation[0], observation[1]))
   
-  #print(observed_set)
-        
+         
 run()
