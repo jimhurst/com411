@@ -16,16 +16,17 @@ def data():
   return paths
   
 def generate():
+  import matplotlib.pyplot as plt
   x_data = [2, 4, 6, 8, 10]
-  y_data = [2, 2, 2, 2, 2]
-
+  
   print("How many lines would you like to display?")
   num_lines = int(input())
+  plotstyle = data()
+  counting = 0
   for count in range(num_lines):
-    plotstyle = data()
-    #print(values)
-    import matplotlib.pyplot as plt
-    plt.plot(x_data, y_data)
+    counting = counting + 1
+    y_data = [counting, counting, counting, counting, counting]
+    plt.plot(x_data, y_data, 'plotsyle.colour')
     
   plt.show()
 
