@@ -26,7 +26,9 @@ def generate():
   for count in range(num_lines):
     counting = counting + 1
     y_data = [counting, counting, counting, counting, counting]
-    plt.plot(x_data, y_data, 'plotsyle.colour')
+    colour = plotstyle.get("Colour")
+    print(colour)
+    plt.plot(x_data, y_data)
     
   plt.show()
 
