@@ -20,6 +20,8 @@ def run():
   #print(values)
   import matplotlib.pyplot as plt
   plt.plot(values[0], values[1], 'ro--')
+  plt.xlabel("X Values")
+  plt.ylabel("Y Labels")
   plt.show()
 
 run()
