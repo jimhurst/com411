@@ -8,7 +8,7 @@ def read_data(file_path):
   output_list = []
   with open (file_path) as textfile:
     for line in textfile:
-      line.strip
+      line = line.strip()
       output_list.append(int(line))
   return output_list
 
