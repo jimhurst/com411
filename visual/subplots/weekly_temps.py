@@ -18,10 +18,16 @@ def read_data():
 def run():
   showme = read_data()
   #print(showme)
-  fig, (ax1, ax2) = plt.subplots(1, 2)
+  fig, (ax1, ax2) = plt.subplots(2, 1)
   xax = range(len(showme['week1']))
-  ax1.plot(xax, showme['week1'])
-  ax2.plot(xax, showme['week2'])
+  ax1.plot(xax, showme['week1'], 'ro--')
+  ax2.plot(xax, showme['week2'], 'bo--')
+
+  ax1.set_xlabel('Week 1 Samples')
+  ax1.set_ylabel('Temperature')
+
+  ax2.set_xlabel('Week 2 Samples')
+  ax2.set_ylabel('Temperature')
   
   plt.tight_layout()
   plt.show()
