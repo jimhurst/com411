@@ -17,12 +17,14 @@ def read_data():
 
 def run():
   showme = read_data()
-  fig, axes = plt.subplots(1, 2)
-  xax = range(8)
+  #print(showme)
+  fig, (ax1, ax2) = plt.subplots(1, 2)
+  xax = range(len(showme['week1']))
+  ax1.plot(xax, showme['week1'])
+  ax2.plot(xax, showme['week2'])
   
   plt.tight_layout()
   plt.show()
-
-  #print(showme)
+  
 
 run()
