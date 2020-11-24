@@ -15,8 +15,14 @@ def read_data():
       output_dict[header[1]].append(int(row[1]))
   return output_dict
 
+def run():
+  showme = read_data()
+  fig, axes = plt.subplots(1, 2)
+  xax = range(8)
   
+  plt.tight_layout()
+  plt.show()
 
-showme = read_data()
-print(showme)
+  #print(showme)
 
+run()

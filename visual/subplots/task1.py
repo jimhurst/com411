@@ -9,7 +9,7 @@ def read_data(file_path):
   with open (file_path) as textfile:
     for line in textfile:
       line = line.strip()
-      output_list.append(int(line))
+      output_list.append(float(line))
   return output_list
 
 #defining the run function
