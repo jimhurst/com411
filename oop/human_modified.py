@@ -15,32 +15,32 @@ class Robot:
     self.age = 0
 
   # An instance method
-  def display(self):
-    print(f"I am {self.name}")
+  def __repr__(self):
+    return f'robot(name={self.name}, age={self.age})'
+  
 
 #Test - Runs code if not being imported
 if (__name__ == "__main__"):
-  robot = Robot()
-  robot.display()
-
-
+  my_robot = Robot()
+  print(repr(my_robot))
+  
 class Human:
   # A class attribute
   MAX_ENERGY = 100
 
   # An initialiser (special instance method)
-  def __init__(self, name = "", age=0):
+  def __init__(self):
 
     # An instance attribute
-    self.name = name
-    self.age = age
+    self.name = "Human"
+    self.age = 0
     self.energy = Human.MAX_ENERGY
 
   # An instance method
   def display(self):
-    print(f"I am {self.name} and I am {self.age} years old")
+    print(f"I am {self.name}")
 
 #Test - Runs code if not being imported
 if (__name__ == "__main__"):
-  human = Human("Peter", 23)
+  human = Human()
   human.display()
