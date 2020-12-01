@@ -16,7 +16,7 @@ def read_data(file_path):
 #this function calls the read data function and passes the path to the text file. It then creates two subplots arranged horizontally, and then formats each subplot according to the task requirements.
 def run():
   result = read_data("visual/subplots/temps.txt")
-  fig, axes = plt.subplots(1, 2)
+  fig, axes = plt.subplots(2, 2)
   
   axes[0].plot(range(1,len(result) +1), result)
   axes[0].set_xlabel('Sample')
@@ -31,6 +31,20 @@ def run():
 
   axes[1].tick_params(which='minor', length = 4, color = 'r')
   axes[1].yaxis.set_minor_locator(MultipleLocator(1))
+
+  axes[2].plot(range(1,len(result) +1), result)
+  axes[2].set_xlabel('Sample')
+  axes[2].set_ylabel('Temperature')
+
+  axes[2].tick_params(which='minor', length = 4, color = 'r')
+  axes[2].yaxis.set_minor_locator(MultipleLocator(0.5))
+
+  axes[3].bar(range(1,len(result) +1), result)
+  axes[3].set_xlabel('Sample')
+  axes[3].set_ylabel('Temperature')
+
+  axes[3].tick_params(which='minor', length = 4, color = 'r')
+  axes[3].yaxis.set_minor_locator(MultipleLocator(1))
 
   plt.tight_layout()
   plt.show()
